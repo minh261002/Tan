@@ -1,0 +1,48 @@
+.cart {
+  &__product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  &__img {
+    width: 50%;
+    padding: 10px;
+    height: 100px;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    &--price {
+      width: 20%;
+    }
+    &--count,
+    &--total {
+      width: 20%;
+    }
+    &--desc {
+      width: 40%;
+    }
+  }
+
+  &__salePrice {
+    font-weight: 500;
+  }
+  &__originalPrice {
+    text-decoration: line-through;
+    font-size: 14px;
+  }
+
+  &__remove {
+    text-align: center;
+    & span {
+      cursor: pointer;
+    }
+  }
+}
